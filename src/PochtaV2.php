@@ -91,6 +91,11 @@ class PochtaV2
         }
     }
 
+    public function getCities()
+    {
+        return $this->requestData('settlements', '', '', 'get');
+    }
+
     public function createAddress(array $data)
     {
         return $this->requestData('addresses', $data);
