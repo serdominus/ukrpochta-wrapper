@@ -1,21 +1,17 @@
 {
-  "name": "serdominus/ukrpochta-wrapper",
-  "description": "PHP wrapper для API Укрпошти з автоматичним вибором токенів",
-  "type": "library",
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "SerDominuS",
-      "homepage": "https://github.com/serdominus"
-    }
-  ],
+  "name": "serdominus/ukrpochta-wrapper-test",
   "require": {
-    "php": ">=7.4",
-    "guzzlehttp/guzzle": "^7.0"
+    "serdominus/ukrpochta-wrapper": "dev-main"
   },
-  "autoload": {
-    "psr-4": {
-      "Ukrpochta\\": "src/"
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "repositories": [
+    {
+      "type": "path",
+      "url": "../ukrpochta-wrapper",
+      "options": {
+        "symlink": true
+      }
     }
-  }
+  ]
 }
